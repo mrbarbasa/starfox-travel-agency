@@ -1,4 +1,4 @@
-starfox_travel_agency
+Starfox Travel Agency
 =====================
 
 An exercise using Sass
