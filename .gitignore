@@ -1,5 +1,6 @@
 # Mac-specific files
 .DS_Store
 
-# Node-specific files
+# App-specific files
 app/node_modules
+app/bower_components
