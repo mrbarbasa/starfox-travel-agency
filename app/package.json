@@ -1,0 +1,22 @@
+{
+  "name": "StarfoxTravelAgency",
+  "version": "0.0.0",
+  "description": "An exercise using Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marifel Barbasa",
+  "license": "ISC",
+  "devDependencies": {
+    "connect-livereload": "^0.5.0",
+    "grunt": "^0.4.5",
+    "grunt-filerev": "^2.1.2",
+    "gulp": "^3.8.10",
+    "gulp-sass": "^1.1.0",
+    "tiny-lr": "^0.1.4"
+  },
+  "dependencies": {
+    "express": "^4.10.2"
+  }
+}
