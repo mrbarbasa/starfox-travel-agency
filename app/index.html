@@ -8,36 +8,103 @@
     <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
-    <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="#">My Site</a></h1>
-        </li>
-         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-      </ul>
+    <header id="header_block">
+      <div class="header_banner show-for-medium-up">
+        <div id="site_logo"></div>
+        <h1 id="site_title">
+          <a href="#">
+            <span id="site_title_starfox">
+              <strong>StarFox</strong>
+            </span>
+            <span id="site_title_intergalactic">
+              Intergalactic Travel Agency
+            </span>
+          </a>
+        </h1> <!-- #site_title -->
+      </div> <!-- #header_banner -->
 
-      <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right">
-          <li class="active"><a href="#">Right Button Active</a></li>
-          <li class="has-dropdown">
-            <a href="#">Right Button Dropdown</a>
-            <ul class="dropdown">
-              <li><a href="#">First link in dropdown</a></li>
-              <li class="active"><a href="#">Active link in dropdown</a></li>
+      <div class="row">
+        <div class="small-12 columns">
+          <nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area show-for-small-only">
+              <li class="name">
+                <h1>
+                  <a href="#">
+                    <span><strong>Star</strong></span>Fox
+                  </a>
+                </h1>
+              </li>
+              <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
             </ul>
-          </li>
-        </ul>
 
-        <!-- Left Nav Section -->
-        <ul class="left">
-          <li><a href="#">Left Nav Button</a></li>
-        </ul>
-      </section>
-    </nav>
+            <section class="top-bar-section">
+              <ul class="right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Interstellar Travel</a></li>
+              </ul>
+            </section>
+          </nav> <!-- .top-bar -->
+        </div> <!-- .columns -->
+      </div> <!-- .row -->
+    </header> <!-- #header_block -->
 
-    <h1>Hello Hawaii</h1>
+    <div id="content_block">
+      <section id="main_intro">
+        <div class="row">
+          <div id="main_intro_left" class="small-12 medium-12 large-8 columns">
+              <p>We will take you to the <strong>Moon and Back!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae leo est. Maecenas sit amet nisi tellus. Donec a consequat mi, ut sodales eros!</p>
+          </div> <!-- #main_intro_left -->
+          <div id="main_intro_right" class="small-12 medium-12 large-4 columns">
+            <div id="main_intro_ship">
+              <span>Starfox Intergalactic Agency</span>
+            </div>
+            <a href="#" id="more_info">Find Out More</a>
+          </div> <!-- #main_intro_right -->
+        </div>
+      </section> <!-- #main_intro -->
+
+      <section id="main_options">
+        <div id="main_options_inner" class="row">
+          <div class="small-12 medium-12 large-4 columns">
+            <a href="#" class="main_option">
+              <h2>To the Moon</h2>
+              <h3>$30,000</h3>
+              <p>Covers travel fare, lodgings, and meals for 3 months in space.</p>
+            </a>
+          </div> <!-- To the Moon -->
+          <div class="small-12 medium-12 large-4 columns">
+            <a href="#" class="main_option">
+              <h2>Just Around Earth</h2>
+              <h3>$10,000</h3>
+              <p>Covers travel fare, lodgings, and meals for 2 weeks in space.</p>
+            </a>
+          </div> <!-- Just Around Earth -->
+          <div class="small-12 medium-12 large-4 columns">
+            <div id="more_deals" class="main_option">
+              <ul>
+                <li>
+                  <h4>Just to Jupiter</h4>
+                  <p>$26,000</p>
+                </li>
+                <li>
+                  <h4>Center of the Earth</h4>
+                  <p>$156,000</p>
+                </li>
+                <li>
+                  <a href="#">More Deals</a>
+                </li>
+              </ul>
+            </div>
+          </div> <!-- Just to Jupiter -->
+        </div>
+      </section> <!-- #main_options -->
+    </div> <!-- #content_block -->
+
+    <footer id="footer_block">
+      <p>UFO graphics designed by Kari Gaynor and Dmitry Lagunov from the Noun Project</p>
+    </footer> <!-- #footer_block -->
 
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/foundation/js/foundation.min.js"></script>

@@ -5555,7 +5555,3 @@ th.hide-for-touch {
     display: table-cell !important; }
   th.show-for-print {
     display: table-cell !important; } }
-
-body {
-  color: red;
-  background: #232329; }

@@ -1,9 +1,14 @@
 @import "partials/settings";
 @import "../bower_components/foundation/scss/foundation";
 
-$gunmetal_gray: #232329;
+@import "http://fonts.googleapis.com/css?family=Open+Sans:400,300,700)";
 
-body {
-  color: red;
-  background: $gunmetal_gray;
-}
+$color-banner: #A8CBCB;
+$color-nav-bg: #363636;
+$color-nav-item: #A6C8C8;
+$color-nav-item-hover: #FCFCFC;
+
+$color-footer-bg: #3C3C3C;
+$color-footer-text: #646464;
+
+
