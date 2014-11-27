@@ -1,7 +1,7 @@
 @import "partials/settings";
 @import "../bower_components/foundation/scss/foundation";
 
-@import "http://fonts.googleapis.com/css?family=Open+Sans:400,300,700)";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 $color-banner: #A8CBCB;
 $color-nav-bg: #363636;
@@ -10,5 +10,3 @@ $color-nav-item-hover: #FCFCFC;
 
 $color-footer-bg: #3C3C3C;
 $color-footer-text: #646464;
-
-
