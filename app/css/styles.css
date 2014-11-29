@@ -5557,74 +5557,122 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
-#content_block section#main_intro {
+header#header_block .header_banner {
   background-color: #A8CBCB;
+  background-image: url('/assets/header_bg.png');
+  padding-top: 54px;
+  padding-bottom: 68px; }
+  header#header_block .header_banner #site_logo {
+    background-image: url('/assets/logo.png');
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 76px;
+    margin: 0 auto; }
+  header#header_block .header_banner h1#site_title {
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 10px; }
+    header#header_block .header_banner h1#site_title a {
+      color: black; }
+@media only screen and (min-width:40.063em) {
+  header#header_block nav.top-bar {
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    padding: 9px 0;
+    height: 64px; }
+    header#header_block nav.top-bar section.top-bar-section ul.right {
+      text-align: center;
+      width: 100%; }
+      header#header_block nav.top-bar section.top-bar-section ul.right li {
+        margin: 0 5px;
+        display: inline-block;
+        float: none; }
+        header#header_block nav.top-bar section.top-bar-section ul.right li > a {
+          font-size: 18px;
+          color: #A8CBCB; }
+          header#header_block nav.top-bar section.top-bar-section ul.right li > a:hover {
+            background-color: #333333;
+            color: #FFFFFF; } }
+
+#content_block section#main_intro {
   padding: 45px 34px 60px 34px; }
-  #content_block section#main_intro #main_intro_left {
+  @media only screen and (max-width: 40em) {
+    #content_block section#main_intro {
+      background-color: #A8CBCB; } }
+  @media only screen and (min-width:40.063em) {
+    #content_block section#main_intro .main_intro_bg {
+      background-color: #A8CBCB;
+      border-radius: 7px;
+      -webkit-border-radius: 7px;
+      padding: 0 70px;
+      padding-bottom: 60px; } }
+  #content_block section#main_intro .main_intro_bg #main_intro_left {
     background-image: url('/assets/ship.png');
     background-repeat: no-repeat;
     background-position: center 0;
     padding-top: 220px; }
-    #content_block section#main_intro #main_intro_left p {
+    #content_block section#main_intro .main_intro_bg #main_intro_left p {
       color: #363636;
       font-size: 30px;
       font-weight: 100;
       text-align: center;
       margin-bottom: 54px; }
-  #content_block section#main_intro #main_intro_right {
-    background-color: #666666;
+  #content_block section#main_intro .main_intro_bg #main_intro_right {
     text-align: center; }
-    #content_block section#main_intro #main_intro_right #main_intro_ship span {
+    #content_block section#main_intro .main_intro_bg #main_intro_right #main_intro_ship span {
       display: none; }
-    #content_block section#main_intro #main_intro_right a#more_info {
+    #content_block section#main_intro .main_intro_bg #main_intro_right a#more_info {
+      background-color: #666666;
       display: block;
-      padding: 20px 0;
+      max-width: 308px;
+      margin: 0 auto;
+      padding: 18px 0;
       color: white;
       font-size: 20px;
       font-weight: 100;
       letter-spacing: 1px;
       border-bottom: 7px solid #363636; }
-
-section#main_options {
+#content_block section#main_options {
   color: white;
   margin: 58px 48px 0 48px; }
-  section#main_options a.main_option {
+  #content_block section#main_options a.main_option {
     display: block;
     margin-bottom: 58px;
     background-color: #666666;
     border-radius: 7px;
     -webkit-border-radius: 7px;
     text-align: center; }
-    section#main_options a.main_option h2 {
+    #content_block section#main_options a.main_option h2 {
       color: white;
       font-size: 24px;
       font-weight: bold;
       border-bottom: 1px solid #565656;
       margin: 0;
       padding: 22px; }
-    section#main_options a.main_option div {
+    #content_block section#main_options a.main_option div {
       border-top: 1px solid #767676;
       padding-top: 32px; }
-      section#main_options a.main_option div h3 {
+      #content_block section#main_options a.main_option div h3 {
         text-align: left;
         color: white;
         font-size: 64px;
         border-bottom: 10px solid white;
         margin: 0 auto;
         width: 236px; }
-    section#main_options a.main_option p {
+    #content_block section#main_options a.main_option p {
       color: white;
       padding: 34px 110px;
       line-height: 1.4em; }
-  section#main_options #more_deals {
+  #content_block section#main_options #more_deals {
     text-align: center; }
-    section#main_options #more_deals ul {
+    #content_block section#main_options #more_deals ul {
       list-style-type: none; }
-      section#main_options #more_deals ul li h4 {
+      #content_block section#main_options #more_deals ul li h4 {
         display: none; }
-      section#main_options #more_deals ul li p {
+      #content_block section#main_options #more_deals ul li p {
         display: none; }
-      section#main_options #more_deals ul li a {
+      #content_block section#main_options #more_deals ul li a {
         display: block;
         background-color: #A8CBCB;
         color: white;
