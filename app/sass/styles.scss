@@ -4,9 +4,157 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 $color-banner: #A8CBCB;
+$color-text: #363636; // dark grey
+$color-options: #666666;
+
 $color-nav-bg: #363636;
 $color-nav-item: #A6C8C8;
 $color-nav-item-hover: #FCFCFC;
 
 $color-footer-bg: #3C3C3C;
 $color-footer-text: #646464;
+
+#content_block {
+  section#main_intro {
+    background-color: $color-banner;
+    padding: 45px 34px 60px 34px;
+
+    #main_intro_left {
+      // background-color: white;
+      background-image: url('/assets/ship.png');
+      background-repeat: no-repeat;
+      background-position: center 0;
+      padding-top: 220px;
+
+      // 45px
+      // 65px
+      // 54px
+      // 65px
+      // 60px on sides
+
+      p {
+        color: $color-text;
+        font-size: 30px;
+        font-weight: 100;
+        text-align: center;
+        margin-bottom: 54px;
+      }
+    }
+
+    #main_intro_right {
+      background-color: $color-options;
+      text-align: center;
+
+      #main_intro_ship {
+        span {
+          display: none;
+        }
+      }
+
+      a#more_info {
+        display: block;
+        padding: 20px 0;
+        color: white;
+        font-size: 20px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        border-bottom: 7px solid #363636;
+        // box-sizing: border-box;
+      }
+    }
+  }
+}
+
+section#main_options {
+  color: white;
+  margin: 58px 48px 0 48px;
+
+  a.main_option {
+    display: block;
+    margin-bottom: 58px;
+    background-color: $color-options;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    text-align: center;
+
+    h2 {
+      // background-color: pink;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 1px solid #565656;
+      margin: 0;
+      padding: 22px;
+    }
+
+    div {
+      // background-color: tan;
+      border-top: 1px solid #767676;
+      padding-top: 32px;
+
+      h3 {
+        // background-color: orange;
+        text-align: left;
+        color: white;
+        font-size: 64px;
+        border-bottom: 10px solid white;
+        margin: 0 auto;
+        width: 236px;
+      }
+    }
+
+    p {
+      // background-color: teal;
+      color: white;
+      padding: 34px 110px;
+      line-height: 1.4em;
+    }
+  }
+
+  #more_deals {
+    text-align: center;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        h4 {
+          display: none;
+        }
+
+        p {
+          display: none;
+        }
+
+        a {
+          display: block;
+          background-color: #A8CBCB;
+          color: white;
+          font-size: 24px;
+          font-weight: bold;
+          padding: 24px;
+          background-image: url('/assets/arrow.png');
+          background-repeat: no-repeat;
+          background-position: 75% center;
+        }
+      }
+    }
+  }
+}
+
+footer#footer_block {
+  background-color: #363636;
+
+  p {
+    color: $color-options;
+    font-size: 14px;
+    text-align: center;
+    padding: 24px 152px 32px 152px;
+    line-height: 1.3em;
+  }
+}
+
+
+
+
+

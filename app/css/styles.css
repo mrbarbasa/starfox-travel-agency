@@ -5557,3 +5557,89 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
+#content_block section#main_intro {
+  background-color: #A8CBCB;
+  padding: 45px 34px 60px 34px; }
+  #content_block section#main_intro #main_intro_left {
+    background-image: url('/assets/ship.png');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    padding-top: 220px; }
+    #content_block section#main_intro #main_intro_left p {
+      color: #363636;
+      font-size: 30px;
+      font-weight: 100;
+      text-align: center;
+      margin-bottom: 54px; }
+  #content_block section#main_intro #main_intro_right {
+    background-color: #666666;
+    text-align: center; }
+    #content_block section#main_intro #main_intro_right #main_intro_ship span {
+      display: none; }
+    #content_block section#main_intro #main_intro_right a#more_info {
+      display: block;
+      padding: 20px 0;
+      color: white;
+      font-size: 20px;
+      font-weight: 100;
+      letter-spacing: 1px;
+      border-bottom: 7px solid #363636; }
+
+section#main_options {
+  color: white;
+  margin: 58px 48px 0 48px; }
+  section#main_options a.main_option {
+    display: block;
+    margin-bottom: 58px;
+    background-color: #666666;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    text-align: center; }
+    section#main_options a.main_option h2 {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 1px solid #565656;
+      margin: 0;
+      padding: 22px; }
+    section#main_options a.main_option div {
+      border-top: 1px solid #767676;
+      padding-top: 32px; }
+      section#main_options a.main_option div h3 {
+        text-align: left;
+        color: white;
+        font-size: 64px;
+        border-bottom: 10px solid white;
+        margin: 0 auto;
+        width: 236px; }
+    section#main_options a.main_option p {
+      color: white;
+      padding: 34px 110px;
+      line-height: 1.4em; }
+  section#main_options #more_deals {
+    text-align: center; }
+    section#main_options #more_deals ul {
+      list-style-type: none; }
+      section#main_options #more_deals ul li h4 {
+        display: none; }
+      section#main_options #more_deals ul li p {
+        display: none; }
+      section#main_options #more_deals ul li a {
+        display: block;
+        background-color: #A8CBCB;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 24px;
+        background-image: url('/assets/arrow.png');
+        background-repeat: no-repeat;
+        background-position: 75% center; }
+
+footer#footer_block {
+  background-color: #363636; }
+  footer#footer_block p {
+    color: #666666;
+    font-size: 14px;
+    text-align: center;
+    padding: 24px 152px 32px 152px;
+    line-height: 1.3em; }
