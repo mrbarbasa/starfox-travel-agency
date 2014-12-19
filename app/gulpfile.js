@@ -5,13 +5,13 @@ var server = require('./server');
 gulp.task('styles', function() {
   return gulp.src('./sass/*.scss')
       .pipe(sass())
-      .pipe(gulp.dest('./css'));
+      .pipe(gulp.dest('./static/css'));
 });
 
 gulp.task('watch_styles', function() {
   gulp.watch('./sass/**/*.scss', ['styles']);
   gulp.watch('*.html', notifyLiveReload);
-  gulp.watch('css/*.css', notifyLiveReload);
+  gulp.watch('static/css/*.css', notifyLiveReload);
 });
 
 gulp.task('express', function() {

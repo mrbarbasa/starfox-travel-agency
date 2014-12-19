@@ -1,19 +1,41 @@
-mixin render_pet(pet)
-  li= pet
+mixin displayOption(option)
+  div.small-12.medium-12.large-4.columns
+    a(href="#", class="main_option")
+      h2 #{option.title}
+      div
+        h3 #{option.price}
+      p #{option.description}
+
+mixin displayDeal(deal)
+  li
+    h4 #{deal.title}
+    p #{deal.price}
 
 extends ./layout.jade
 
 block content
-  p test #{ 2 + 5 }
-  p
-    if (myname === "this stuff")
-      span these are my stuffs
-    else
-       | these stuffs are for #{myname}
-
-  ul
-    each pet in mypets
-        +render_pet(pet)
-
-block copyright
-  | &copy; My Stuff
+  div#content_block
+    section#main_intro
+      div.row.main_intro_bg
+        div.small-12.medium-12.large-8.columns
+          div#main_intro_left
+            p
+              | We will take you to the 
+              strong Moon and Back! 
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae leo est. Maecenas sit amet nisi tellus. Donec a consequat mi, ut sodales eros!
+        div.small-12.medium-12.large-4.columns
+          div#main_intro_right
+            div#main_intro_ship
+              span Starfox Intergalactic Agency
+            a(href="#", id="more_info") Find Out More
+    section#main_options
+      div.row
+        each option in main_options
+          +displayOption(option)
+        div.small-12.medium-12.large-4.columns
+          div#more_deals
+            ul
+              each deal in more_deals
+                +displayDeal(deal)
+              li
+                a(href="#") More Deals

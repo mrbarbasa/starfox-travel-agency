@@ -1,18 +1,12 @@
 doctype html
 html(lang="en")
-head
-  meta(charset="UTF-8")
-  title Document
-body
-  div#header
-    | my cool header
+  include ./includes/head.jade
+  body
+    include ./includes/header.jade
 
-  div#content
     block content
 
-  div#footer
-    | hello footer
+    include ./includes/footer.jade
 
-    span.copyright
-      block copyright
-        | &copy; Their Stuff
+    include ./includes/scripts.jade
+    

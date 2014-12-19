@@ -3,4 +3,4 @@
 
 # App-specific files
 app/node_modules
-app/bower_components
+app/static/bower_components
